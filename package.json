@@ -5,6 +5,15 @@
   "main": "index.js",
   "scripts": {
     "server": "nodemon index.js",
+    "//": "",
+    "//": "note the use of cross-env ... it's a module that simply",
+    "//": "allows us to add environment variables in a cross-platform",
+    "//": "manner... the syntax and idiosynchrosies of setting environment",
+    "//": "variables on Windows, Mac, in bash, and other environments are",
+    "//": "all handled with this module, and we can set environment",
+    "//": "variables that impact our testing suites (like setting the",
+    "//": "correct DB environment for our jest sweets.)",
+    "//": "",
     "test": "cross-env DB_ENV=testing jest --watch",
     "start": "node index.js"
   },
@@ -18,8 +27,11 @@
   },
   "devDependencies": {
     "cross-env": "^5.2.0",
-    "jest": "^24.8.0",
+    "jest": "^24.9.0",
     "nodemon": "^1.19.1",
     "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }
