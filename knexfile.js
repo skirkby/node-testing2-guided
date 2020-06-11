@@ -14,6 +14,7 @@ module.exports = {
       directory: "./data/seeds",
     },
   },
+
   testing: {
     client: "sqlite3",
     connection: {
