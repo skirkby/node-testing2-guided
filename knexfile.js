@@ -1,6 +1,7 @@
 const pgConnection = process.env.DATABASE_URL || "postgresql://postgres@localhost/hobbits";
 
 module.exports = {
+
   development: {
     client: "sqlite3",
     connection: {
@@ -14,6 +15,7 @@ module.exports = {
       directory: "./data/seeds",
     },
   },
+
   testing: {
     client: "sqlite3",
     connection: {
