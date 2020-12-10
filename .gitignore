@@ -1,9 +1,6 @@
 # Mac cruft
 .DS_Store
 
-# Let students use Yarn
-package-lock.json
-
 # Logs
 logs
 *.log
@@ -84,3 +81,6 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+# VSCode debugging
+.vscode/launch.json
