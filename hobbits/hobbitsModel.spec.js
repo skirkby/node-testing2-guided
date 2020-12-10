@@ -1,8 +1,23 @@
 const Hobbits = require('./hobbitsModel.js');
 const db = require('../data/dbConfig.js');
 
+
+//----------------------------------------------------------------------------//
+// 
+// See ./api/server.spec.js for some info on the jest methods etc. 
+// 
+//----------------------------------------------------------------------------//
+
 describe('hobbits model', () => {
     describe('insert()', () => {
+
+        //----------------------------------------------------------------------------//
+        // 
+        // jest.beforeEach() specifies a method that is executed before each test. You
+        // would use this to do any setup or value initialization needed before *every*
+        // test.
+        // 
+        //----------------------------------------------------------------------------//
 
         beforeEach(async () => {
             await db('hobbits').truncate();
@@ -28,3 +43,4 @@ describe('hobbits model', () => {
 
     });
 });
+
