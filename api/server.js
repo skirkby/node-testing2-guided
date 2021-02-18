@@ -1,6 +1,6 @@
 const express = require("express");
 
-const Hobbits = require("../hobbits/hobbitsModel.js");
+const Hobbits = require("./hobbits/hobbits-model.js");
 
 const server = express();
 
@@ -18,6 +18,22 @@ server.get("/hobbits", (req, res) => {
     .catch(error => {
       res.status(500).json(error);
     });
+});
+
+server.get("/hobbits/id", (req, res) => {
+  res.end()
+});
+
+server.post("/hobbits", (req, res) => {
+  res.end()
+});
+
+server.delete("/hobbits/:id", (req, res) => {
+  res.end()
+});
+
+server.put("/hobbits/:id", (req, res) => {
+  res.end()
 });
 
 module.exports = server;

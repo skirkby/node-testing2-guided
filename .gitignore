@@ -84,3 +84,6 @@ typings/
 
 # VSCode debugging
 .vscode/launch.json
+
+# databases
+*.db3
