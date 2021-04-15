@@ -29,7 +29,7 @@ module.exports = {
       min: 2,
       max: 10
     },
-    migration: {
+    migrations: {
       directory: "./data/migrations"
     },
     seeds: {
