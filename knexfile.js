@@ -1,4 +1,5 @@
 const pgConnection = process.env.DATABASE_URL;
+console.log(pgConnection);
 
 module.exports = {
   development: {
